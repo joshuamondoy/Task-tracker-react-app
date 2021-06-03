@@ -1,3 +1,5 @@
+//this are components being import
+//so basically what happens here is this index.js is the main component that connect other components like index.css and app.js to the single page named index.html
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -6,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App /> 
   </React.StrictMode>,
   document.getElementById('root')
 );
