@@ -7,7 +7,7 @@ const Header = ({title}) => { //props are use to pass values from one components
     return (
         <header className='header'>
             <h1>{title}</h1>
-            <Button color='green' text='Add' onClick={onClick}/> {/*this is the Button component file we created*/}
+            <Button color='royalblue' text='Add' onClick={onClick}/> {/*this is the Button component file we created*/}
             {/* <Button color='royalblue' text='Hi'/> now this is the reusablitity
             <Button color='coral' text='Sup'/> */}
         </header>

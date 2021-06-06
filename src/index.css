@@ -10,13 +10,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
 }
 .container {
   width: 400px;
-  height: 200px;
-  border: 1px solid blue;
+  height: 300px;
   margin: 2rem;
   border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
 }
 .header {
   display: flex;
@@ -35,10 +36,21 @@ body {
 .btn:hover {
   cursor: pointer;
 }
-.btn:focus {
-  transform: scale(1.1);
-}
 .task {
-  display: flex;
   padding-left: 1.5rem;
+  background: rgba(253, 253, 253, 0.5);
+  margin: 0.2rem 1rem;
+  position: relative;
+  border-radius: 10px;
+}
+.task:hover {
+  background: rgba(253, 253, 253, 0.7);
+}
+.x-icon {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.9rem;
+}
+.x-icon:hover {
+  cursor: pointer;
 }
