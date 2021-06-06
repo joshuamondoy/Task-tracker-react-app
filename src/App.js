@@ -24,12 +24,18 @@ function App() {
     },
 ]
 )
+//delete task function
+const deleteTask = (id) => {
+  setTasks(tasks.filter((task) => 
+    task.id !== id
+  ))
+}
 
   return (
     //remember to always wrap every element in one parent element else it will throw an erro
     <div className='container'>
       <Header/> {/*this is the Header component file we created*/}
-      <Tasks tasks={tasks}/>
+      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/>: 'No task to show'}
     </div>
   );
 }

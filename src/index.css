@@ -42,15 +42,17 @@ body {
   margin: 0.2rem 1rem;
   position: relative;
   border-radius: 10px;
+  text-align: justify;
 }
 .task:hover {
   background: rgba(253, 253, 253, 0.7);
 }
 .x-icon {
   position: absolute;
-  right: 0.7rem;
-  top: 0.9rem;
+  right: 1rem;
+  top: 1rem;
 }
 .x-icon:hover {
   cursor: pointer;
+  color: red;
 }
