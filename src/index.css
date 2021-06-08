@@ -41,8 +41,8 @@ body {
   background: rgba(253, 253, 253, 0.5);
   margin: 0.2rem 1rem;
   position: relative;
-  border-radius: 10px;
   text-align: justify;
+  cursor: pointer;
 }
 .task:hover {
   background: rgba(253, 253, 253, 0.7);
@@ -55,4 +55,7 @@ body {
 .x-icon:hover {
   cursor: pointer;
   color: red;
+}
+.task.reminder {
+  border-left: 5px solid royalblue;
 }

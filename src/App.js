@@ -31,11 +31,19 @@ const deleteTask = (id) => {
   ))
 }
 
+//toggle reminder
+const toggleReminder = (id) => {
+  setTasks(tasks.map((task)  => 
+  task.id === id ? {...task, reminder: 
+  !task.reminder } : task
+    )
+  )
+}
   return (
     //remember to always wrap every element in one parent element else it will throw an erro
     <div className='container'>
       <Header/> {/*this is the Header component file we created*/}
-      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/>: 'No task to show'}
+      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/>: 'No task to show'}
     </div>
   );
 }
