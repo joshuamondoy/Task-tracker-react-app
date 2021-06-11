@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Tasks from './components/Tasks'
+import AddTask from './components/AddTask'
 import { useState } from 'react'
 function App() {
   //this was just initialize here to be accessible to other sub components
@@ -43,6 +44,7 @@ const toggleReminder = (id) => {
     //remember to always wrap every element in one parent element else it will throw an erro
     <div className='container'>
       <Header/> {/*this is the Header component file we created*/}
+      <AddTask />
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/>: 'No task to show'}
     </div>
   );
